@@ -1,0 +1,17 @@
+
+version: "3.1"
+stories:
+- story: interactive_story_1
+  steps:
+  - intent: enter_data
+    entities:
+    - name: aws
+  - slot_was_set:
+    - name: aws
+  - action: action_greet_user
+  - slot_was_set:
+    - name_is_asked: true
+  - intent: asking_for_address
+  - action: utter_asking_for_address
+  - intent: asking_about_mentioned_things
+  - action: action_check_mentioned_things

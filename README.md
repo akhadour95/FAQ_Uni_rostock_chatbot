@@ -1,1 +1,1 @@
-# FAQ_Uni_rostock_chatbot
+# Uni_Rostock_chatbot
